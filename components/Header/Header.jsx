@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 import classes from "./header.module.css";
 import Link from "next/link";
 
-const NAV__LINK = [
+export const NAV__LINK = [
   {
     path: "/",
     display: "Home",
