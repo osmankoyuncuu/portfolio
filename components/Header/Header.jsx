@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef, useEffect } from "react";
 import { Container } from "reactstrap";
 import classes from "./header.module.css";
 import Link from "next/link";
@@ -27,8 +27,25 @@ export const NAV__LINK = [
 ];
 
 const Header = () => {
+  const headerRef = useRef(null);
+  const headerFunc = () => {
+    if (
+      document.body.scrollTop > 60 ||
+      document.documentElement.scrollTop > 60
+    ) {
+      headerRef.current.classList.add(`${classes.header__shrink}`);
+    } else {
+      headerRef.current.classList.remove(`${classes.header__shrink}`);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", headerFunc);
+    return () => window.removeEventListener("scroll", headerFunc);
+  }, []);
+
   return (
-    <header className={`${classes.header}`}>
+    <header className={`${classes.header}`} ref={headerRef}>
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/*==============navigation logo===============*/}
