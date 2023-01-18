@@ -5,7 +5,6 @@ import PortfolioItem from "./PortfolioItem";
 import portfolioData from "../../data/portfolio";
 
 const Portfolio = () => {
-  console.log(portfolioData);
   return (
     <section id="portfolio">
       <Container>
