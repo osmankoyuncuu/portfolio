@@ -16,3 +16,17 @@
 .about__img__box {
   width: 200px !important;
 }
+@media screen and (max-width: 992px) {
+  .about__img__gallery {
+    justify-content: center !important;
+    margin-top: 50px;
+  }
+  .about__content h3 {
+    font-size: 1.3rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__img__box {
+    width: 150px !important  ;
+  }
+}

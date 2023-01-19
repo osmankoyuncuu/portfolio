@@ -13,7 +13,7 @@ const About = () => {
     <section id="about">
       <Container>
         <Row>
-          <Col md="6">
+          <Col lg="6" className={`${classes.about__content} `}>
             <SectionSubtitle subtitle="About me" />
             <h3 className="mb-4">I{"'"}m here</h3>
             <h3 className="mb-4">to help your next project</h3>
@@ -62,8 +62,10 @@ const About = () => {
               </button>
             </div>
           </Col>
-          <Col md="6">
-            <div className="d-flex gap-4 justify-content-end">
+          <Col lg="6">
+            <div
+              className={`${classes.about__img__gallery} d-flex gap-4 justify-content-end`}
+            >
               <div className="d-flex flex-column mb-3">
                 <div
                   className={`${classes.about__img} ${classes.about__img__box}`}

@@ -28,6 +28,7 @@ export const NAV__LINK = [
 
 const Header = () => {
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
   const headerFunc = () => {
     if (
       document.body.scrollTop > 60 ||
@@ -44,6 +45,9 @@ const Header = () => {
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
 
+  const toggleMenu = () =>
+    menuRef.current.classList.toggle(`${classes.menu__active}`);
+
   return (
     <header className={`${classes.header}`} ref={headerRef}>
       <Container>
@@ -56,21 +60,21 @@ const Header = () => {
           </div>
 
           {/*==============nav menu===============*/}
-          <div className={`${classes.navigation}`}>
+          <div className={`${classes.navigation}`} ref={menuRef}>
+            <span className={`${classes.mobile__exit}`} onClick={toggleMenu}>
+              X
+            </span>
             <div className={`${classes.nav__menu}`}>
               {NAV__LINK.map((item, index) => (
                 <Link href={item.path} key={index}>
                   {item.display}
                 </Link>
               ))}
-              <div className={`${classes.nav__right}`}>
-                <p className="d-flex align-items-center gap-2 mb-0">
-                  {" "}
-                  <i className="ri-phone-line"></i>0530 236 00 00{" "}
-                </p>
-              </div>
             </div>
           </div>
+          <span className={`${classes.mobile__menu}`}>
+            <i className="ri-menu-line" onClick={toggleMenu}></i>
+          </span>
         </div>
       </Container>
     </header>

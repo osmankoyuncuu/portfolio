@@ -76,3 +76,21 @@ footer {
   border-radius: 1rem;
   background: #171f38;
 }
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    padding-top: 100px;
+  }
+  footer {
+    padding-top: 0px;
+    border: none;
+  }
+}

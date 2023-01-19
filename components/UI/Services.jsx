@@ -20,7 +20,7 @@ const Services = () => {
               />
             </div>
           </Col>
-          <Col md="6">
+          <Col md="6" className={`${classes.services__title}`}>
             <SectionSubtitle subtitle="What I do" />
             <h3 className="mb-0 mt-4">Better Desing,</h3>
             <h3 className="mb-4">Better Experience</h3>

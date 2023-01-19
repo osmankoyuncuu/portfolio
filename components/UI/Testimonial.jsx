@@ -20,7 +20,7 @@ const Testimonial = () => {
     <section>
       <Container>
         <Row>
-          <Col md="6">
+          <Col md="6" className={`${classes.testimonial__img}`}>
             <Image alt="network-img" src={network} width="400" height="400" />
           </Col>
           <Col md="6">

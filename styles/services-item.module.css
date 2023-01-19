@@ -34,3 +34,14 @@
 .services__item:last-child {
   border-radius: 10px 10px 15px 0px !important;
 }
+@media screen and (max-width: 992px) {
+  .services__item {
+    padding: 15px;
+  }
+  .services__item span i {
+    font-size: 2rem;
+  }
+  .services__item h5 {
+    font-size: 0.9rem;
+  }
+}

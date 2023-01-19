@@ -4,3 +4,10 @@
 .tab__btn__passive {
   color: #fff !important;
 }
+@media screen and (max-width: 768px) {
+  .tab__btns {
+    text-align: left !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

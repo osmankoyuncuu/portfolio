@@ -45,7 +45,7 @@ const Portfolio = () => {
             <h4 className="mt-4">Some of my distinguished works </h4>
           </Col>
           <Col md="6">
-            <div className="text-end">
+            <div className={`${classes.tab__btns} text-end`}>
               <button
                 className={`${
                   filter === "Frontend" ? active : passive
