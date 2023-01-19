@@ -69,7 +69,7 @@ footer {
 }
 
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
   background: #808dad;
 }
 ::-webkit-scrollbar-thumb {

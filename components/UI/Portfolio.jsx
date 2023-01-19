@@ -3,8 +3,39 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 import portfolioData from "../../data/portfolio";
+import { useState, useEffect } from "react";
 
 const Portfolio = () => {
+  const [filter, setFilter] = useState("Frontend");
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    if (filter === "Frontend") {
+      const filterData = portfolioData.filter(
+        (item) => item.category === filter
+      );
+      setData(filterData);
+      console.log("fr");
+    }
+    if (filter === "Backend") {
+      const filterData = portfolioData.filter(
+        (item) => item.category === filter
+      );
+      setData(filterData);
+      console.log("bc");
+    }
+    if (filter === "Full-Stack") {
+      const filterData = portfolioData.filter(
+        (item) => item.category === filter
+      );
+      setData(filterData);
+      console.log("fs");
+    }
+  }, [filter]);
+
+  const active = `${classes.tab__btn__active}`;
+  const passive = `${classes.tab__btn__passive}`;
+
   return (
     <section id="portfolio">
       <Container>
@@ -15,12 +46,33 @@ const Portfolio = () => {
           </Col>
           <Col md="6">
             <div className="text-end">
-              <button className={`${classes.tab__btn__active} secondary__btn`}>
-                Web App
+              <button
+                className={`${
+                  filter === "Frontend" ? active : passive
+                } secondary__btn`}
+                onClick={() => setFilter("Frontend")}
+              >
+                Frontend
+              </button>
+              <button
+                className={`${
+                  filter === "Backend" ? active : passive
+                } secondary__btn`}
+                onClick={() => setFilter("Backend")}
+              >
+                Backend
+              </button>
+              <button
+                className={`${
+                  filter === "Full-Stack" ? active : passive
+                } secondary__btn`}
+                onClick={() => setFilter("Full-Stack")}
+              >
+                Full-Stack
               </button>
             </div>
           </Col>
-          {portfolioData.map((item) => (
+          {data?.map((item) => (
             <Col md="4" key={item.id}>
               <PortfolioItem {...item} />
             </Col>

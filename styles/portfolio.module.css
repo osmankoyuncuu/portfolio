@@ -1,3 +1,6 @@
 .tab__btn__active {
   color: #01d293 !important;
 }
+.tab__btn__passive {
+  color: #fff !important;
+}

@@ -31,5 +31,7 @@
   display: none;
 }
 .portfolio__item:hover .portfolio__live {
-  display: block;
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
 }

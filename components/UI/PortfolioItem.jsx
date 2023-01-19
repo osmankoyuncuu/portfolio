@@ -17,7 +17,10 @@ const PortfolioItem = ({ title, img, liveUrl, keyword }) => {
       </div>
       <div className={`${classes.portfolio__live} bg-transparent`}>
         <button className="primary__btn">
-          <a href={liveUrl}>Launch</a>
+          <a href={liveUrl}>Live</a>
+        </button>
+        <button className="primary__btn">
+          <a href={liveUrl}>Github</a>
         </button>
       </div>
     </div>
