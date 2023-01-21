@@ -13,9 +13,9 @@ const Contact = () => {
             <SectionSubtitle subtitle="Contact" />
             <h3 className="mt-4 mb-4">Contact me</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              expedita aspernatur officiis commodi eius cum possimus id
-              accusamus explicabo eaque?
+              To get in touch, you can send your message by sending a message to
+              Linledin, sending an e-mail to my e-mail address or filling out
+              the form.
             </p>
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>

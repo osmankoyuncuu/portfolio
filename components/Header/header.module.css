@@ -51,12 +51,14 @@
 
 .mobile__menu i {
   font-size: 1.3rem;
+
   color: #fff;
   cursor: pointer;
   z-index: 9999;
 }
 .mobile__menu {
   display: none;
+  height: 80px !important;
 }
 .mobile__exit {
   color: #fff;
@@ -71,6 +73,10 @@
 
 /*Responsive*/
 @media screen and (max-width: 992px) {
+  .header {
+    height: 70px;
+    line-height: 70px;
+  }
   .navigation {
     position: fixed;
     top: 0;
@@ -102,10 +108,16 @@
   .logo h1 {
     font-size: 1.3rem;
   }
+  .mobile__menu {
+    height: 70px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
     height: 60px;
     line-height: 60px;
+  }
+  .mobile__menu {
+    height: 60px !important;
   }
 }

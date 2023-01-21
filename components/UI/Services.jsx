@@ -25,10 +25,10 @@ const Services = () => {
             <h3 className="mb-0 mt-4">Better Desing,</h3>
             <h3 className="mb-4">Better Experience</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              pariatur temporibus soluta necessitatibus minus amet tempora quis
-              harum natus voluptates eum exercitationem tempore, unde nulla,
-              eaque nisi culpa laborum. Reprehenderit.
+              Dynamic Full Stack Software Developer with both front end and back
+              end programming languages skills, developing complex solutions,
+              processing strong creative thinking skills, highly energetic and
+              integrated with strong troubleshooting abilities.
             </p>
           </Col>
         </Row>

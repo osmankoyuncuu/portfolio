@@ -1,6 +1,9 @@
 .hero {
   padding-top: 60px;
 }
+.hero__content {
+  margin-top: 40px;
+}
 
 .hero__content h5 {
   color: #808dad;
@@ -9,6 +12,7 @@
 
 .hero__img img {
   border-radius: 50px 5px 5px 5px;
+  height: 400px;
 }
 @media screen and (max-width: 992px) {
   .hero__content h2 {
@@ -17,17 +21,10 @@
   .hero__content h5 {
     font-size: 1.1rem !important;
   }
-  .hero__img img {
-    width: 250px !important;
-    height: 250px !important;
-  }
-  .hero__content {
-    padding-top: 0;
-  }
 }
 @media screen and (max-width: 768px) {
   .hero__img {
     text-align: center !important;
-    margin-top: 50px;
+    /*padding-top: 50px;*/
   }
 }

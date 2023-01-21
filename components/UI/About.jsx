@@ -2,10 +2,7 @@ import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import Image from "next/image";
-import img01 from "../../public/images/avatar.webp";
-import img02 from "../../public/images/avatar.webp";
-import img03 from "../../public/images/avatar.webp";
-import img04 from "../../public/images/avatar.webp";
+import img01 from "../../public/images/about-1.jpg";
 import classes from "../../styles/about.module.css";
 
 const About = () => {
@@ -18,10 +15,12 @@ const About = () => {
             <h3 className="mb-4">I{"'"}m here</h3>
             <h3 className="mb-4">to help your next project</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              qui aperiam rem quaerat suscipit veritatis sunt repellendus illum
-              sit adipisci non quia omnis quos asperiores perferendis facere, et
-              ex esse.
+              Creating server and database for website functionality, ensuring
+              cross-platform mobile optimization. Working with APIs and
+              technical documentation. Focusing both on technical and consumer
+              needs to bring up the final Product. Have the ability to create
+              algorithms effectively and communicate appropriately with team
+              members.
             </p>
             <div className="d-flex align-items-center gap-5">
               <div>
@@ -66,28 +65,11 @@ const About = () => {
             <div
               className={`${classes.about__img__gallery} d-flex gap-4 justify-content-end`}
             >
-              <div className="d-flex flex-column mb-3">
+              <div className="d-flex mb-3">
                 <div
                   className={`${classes.about__img} ${classes.about__img__box}`}
                 >
                   <Image src={img01} alt="about-img" />
-                </div>
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img02} alt="about-img" />
-                </div>
-              </div>
-              <div className="d-flex flex-column mb-3">
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img03} alt="about-img" />
-                </div>
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img04} alt="about-img" />
                 </div>
               </div>
             </div>

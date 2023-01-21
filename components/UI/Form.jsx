@@ -9,7 +9,7 @@ const Form = () => {
         <input type="email" placeholder="Email Address" required />
       </div>
       <div className={`${classes.from__group}`}>
-        <textarea type="text" row={5} placeholder="Message" required />
+        <textarea type="text" row={10} placeholder="Message" required />
       </div>
       <button className="primary__btn" type="submit">
         Send

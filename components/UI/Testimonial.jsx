@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
-import network from "../../public/images/avatar.webp";
+import network from "../../public/images/Testimonials.png";
 import Slider from "react-slick";
 import classes from "../../styles/testimonial.module.css";
 

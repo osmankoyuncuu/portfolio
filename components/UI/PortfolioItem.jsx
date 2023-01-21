@@ -1,16 +1,20 @@
 import classes from "../../styles/portfolio-item.module.css";
 import Image from "next/image";
 
-const PortfolioItem = ({ title, img, liveUrl, keyword }) => {
+const PortfolioItem = ({ title, img, liveUrl, keyword, github }) => {
   return (
     <div className={`${classes.portfolio__item}`}>
       <div className="bg-transparent">
         <h6>{title}</h6>
-        {keyword?.map((item, index) => (
-          <span className={`${classes.portfolio__keyword}`} key={index}>
-            {item}
-          </span>
-        ))}
+        <div
+          className={`${classes.portfolio__keyword__container} bg-transparent`}
+        >
+          {keyword?.map((item, index) => (
+            <span className={`${classes.portfolio__keyword}`} key={index}>
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
       <div className={`${classes.portfolio__img}`}>
         <Image alt="portfolio-img" src={img} width="380" height="250" />
@@ -20,7 +24,7 @@ const PortfolioItem = ({ title, img, liveUrl, keyword }) => {
           <a href={liveUrl}>Live</a>
         </button>
         <button className="primary__btn">
-          <a href={liveUrl}>Github</a>
+          <a href={github}>Github</a>
         </button>
       </div>
     </div>

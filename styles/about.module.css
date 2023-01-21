@@ -9,12 +9,13 @@
 }
 .about__img img {
   width: 100% !important;
-  height: 200px;
+  height: 100%;
 
   border-radius: 5px;
 }
 .about__img__box {
-  width: 200px !important;
+  width: 500px !important;
+  height: 100%;
 }
 @media screen and (max-width: 992px) {
   .about__img__gallery {
