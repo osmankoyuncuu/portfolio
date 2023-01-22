@@ -4,23 +4,23 @@
 .about__img {
   padding: 10px;
   background: var(--bg-secondary);
-  margin-bottom: 20px;
   border-radius: 5px;
 }
 .about__img img {
   width: 100% !important;
   height: 100%;
-
   border-radius: 5px;
 }
 .about__img__box {
   width: 500px !important;
   height: 100%;
 }
+.about__img__gallery {
+  margin-top: 50px;
+}
 @media screen and (max-width: 992px) {
   .about__img__gallery {
     justify-content: center !important;
-    margin-top: 50px;
   }
   .about__content h3 {
     font-size: 1.3rem !important;

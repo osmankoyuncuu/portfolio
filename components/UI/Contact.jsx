@@ -32,10 +32,13 @@ const Contact = () => {
               </li>
             </ul>
             <div className={`${classes.social__links}`}>
-              <Link href="#">
+              <Link href="https://github.com/osmankoyuncuu" target="_blank">
                 <i className="ri-github-fill"></i>
               </Link>
-              <Link href="#">
+              <Link
+                href="https://www.linkedin.com/in/osman-koyuncu/"
+                target="_blank"
+              >
                 <i className="ri-linkedin-box-fill"></i>
               </Link>
             </div>

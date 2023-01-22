@@ -36,7 +36,13 @@
 }
 .social__links i {
   color: var(--third) !important;
+  font-size: 1.6rem;
+  transition: 0.5s;
 }
+.social__links i:hover {
+  color: var(--primary) !important;
+}
+
 @media screen and (max-width: 768px) {
   .social__links {
     margin-bottom: 30px;

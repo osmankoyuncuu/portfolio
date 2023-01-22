@@ -21,10 +21,14 @@ const PortfolioItem = ({ title, img, liveUrl, keyword, github }) => {
       </div>
       <div className={`${classes.portfolio__live} bg-transparent`}>
         <button className="primary__btn">
-          <a href={liveUrl}>Live</a>
+          <a href={liveUrl} target="_blank" rel="noreferrer">
+            Live
+          </a>
         </button>
         <button className="primary__btn">
-          <a href={github}>Github</a>
+          <a href={github} target="_blank" rel="noreferrer">
+            Github
+          </a>
         </button>
       </div>
     </div>

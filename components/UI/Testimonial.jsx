@@ -38,14 +38,12 @@ const Testimonial = () => {
                     height={50}
                   />
                   <div>
-                    <h6>Osman KOYUNCU</h6>
+                    <h6>Anthony Harold</h6>
                     <h6>Fult-Stack Developer</h6>
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  magni unde aspernatur. Unde ea sapiente saepe rerum numquam
-                  doloremque excepturi!
+                  Congratulations on your work and wish you continued success.
                 </p>
               </div>
               <div className={`${classes.testimonial__item}`}>
@@ -58,34 +56,13 @@ const Testimonial = () => {
                     height={50}
                   />
                   <div>
-                    <h6>Osman KOYUNCU</h6>
+                    <h6>Hüseyin</h6>
                     <h6>Fult-Stack Developer</h6>
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  magni unde aspernatur. Unde ea sapiente saepe rerum numquam
-                  doloremque excepturi!
-                </p>
-              </div>
-              <div className={`${classes.testimonial__item}`}>
-                <div className={`${classes.testimonial__client}`}>
-                  <Image
-                    alt="client-img"
-                    src="/images/avatar.webp"
-                    className="rounded-2"
-                    width={50}
-                    height={50}
-                  />
-                  <div>
-                    <h6>Osman KOYUNCU</h6>
-                    <h6>Fult-Stack Developer</h6>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  magni unde aspernatur. Unde ea sapiente saepe rerum numquam
-                  doloremque excepturi!
+                  Thank you for your projects and hard work. Hopefully in bigger
+                  projects.
                 </p>
               </div>
             </Slider>
