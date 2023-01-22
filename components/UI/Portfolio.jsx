@@ -40,11 +40,11 @@ const Portfolio = () => {
     <section id="portfolio">
       <Container>
         <Row>
-          <Col md="6" className="mb-5">
+          <Col md="6" className="mb-3">
             <SectionSubtitle subtitle="Portfolio" />
             <h4 className="mt-4">Some of my distinguished works </h4>
           </Col>
-          <Col md="6">
+          <Col md="6" className="mb-3">
             <div className={`${classes.tab__btns} text-end`}>
               <button
                 className={`${
@@ -73,7 +73,7 @@ const Portfolio = () => {
             </div>
           </Col>
           {data?.map((item) => (
-            <Col md="4" key={item.id}>
+            <Col lg="4" md="6" key={item.id}>
               <PortfolioItem {...item} />
             </Col>
           ))}

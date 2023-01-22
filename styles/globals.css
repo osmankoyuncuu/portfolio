@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --primary: #01d293;
+  --secondary: #fff;
+  --third: #808dad;
+  --bg-primary: #171f3897;
+  --bg-secondary: #171f38;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

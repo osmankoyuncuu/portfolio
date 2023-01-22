@@ -1,5 +1,5 @@
 .services__item {
-  background: #171f38;
+  background: var(--bg-secondary);
   padding: 30px;
   margin-bottom: 30px;
   align-items: center;
@@ -8,7 +8,7 @@
   border-radius: 10px;
 }
 .services__item:hover {
-  background: #01d293;
+  background: var(--primary);
   cursor: pointer;
   transform: translateY(-20px);
 }
@@ -19,11 +19,11 @@
 }
 .services__item span i {
   font-size: 3rem;
-  color: #01d293;
+  color: var(--primary);
 }
 .services__item:hover span i,
 .services__item:hover h5 {
-  color: #171f38;
+  color: var(--bg-secondary);
 }
 .services__item h5 {
   font-size: 1rem;

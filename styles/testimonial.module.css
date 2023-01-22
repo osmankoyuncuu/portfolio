@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 .testimonial__client h6:last-child {
-  color: #01d293;
+  color: var(--primary);
 }
 @media screen and (max-width: 768px) {
   .testimonial__img {
@@ -18,7 +18,6 @@
   }
   .testimonial__img img {
     width: 200px !important;
-    /*margin: auto;*/
   }
 }
 @media screen and (max-width: 576px) {

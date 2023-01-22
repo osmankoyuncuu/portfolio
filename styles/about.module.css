@@ -1,9 +1,9 @@
 .about__icon i {
-  color: #01d293;
+  color: var(--primary);
 }
 .about__img {
   padding: 10px;
-  background: #171f38;
+  background: var(--bg-secondary);
   margin-bottom: 20px;
   border-radius: 5px;
 }

@@ -1,8 +1,19 @@
 .tab__btn__active {
-  color: #01d293 !important;
+  color: var(--primary) !important;
 }
 .tab__btn__passive {
-  color: #fff !important;
+  color: var(--secondary) !important;
+}
+.tab__btns {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .tab__btns {
+    font-size: 0.9rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .tab__btns {

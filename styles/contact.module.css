@@ -17,7 +17,7 @@
   margin-bottom: 0;
 }
 .info__item span i {
-  color: #01d293;
+  color: var(--primary);
   font-size: 1.2rem;
   padding: 5px;
   border-radius: 5px;
@@ -35,7 +35,7 @@
   text-decoration: none;
 }
 .social__links i {
-  color: #808dad !important;
+  color: var(--third) !important;
 }
 @media screen and (max-width: 768px) {
   .social__links {

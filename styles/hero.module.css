@@ -6,7 +6,7 @@
 }
 
 .hero__content h5 {
-  color: #808dad;
+  color: var(--third);
   font-weight: 400;
 }
 
@@ -25,6 +25,5 @@
 @media screen and (max-width: 768px) {
   .hero__img {
     text-align: center !important;
-    /*padding-top: 50px;*/
   }
 }
