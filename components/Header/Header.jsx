@@ -55,7 +55,7 @@ const Header = () => {
           {/*==============navigation logo===============*/}
           <div className={`${classes.logo}`}>
             <h1>
-              <span>O</span>sman
+              <span>{"<"}O</span>sman<span>{"/>"}</span>
             </h1>
           </div>
 
