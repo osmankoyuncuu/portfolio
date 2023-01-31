@@ -1,13 +1,14 @@
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
-import Image from "next/image";
-import img01 from "../../public/images/about-1.jpg";
 import classes from "../../styles/about.module.css";
+import Skill from "./Skill";
+import { skillsData } from "@/data/skills";
+import { RevealList, RevealWrapper } from "next-reveal";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className={`${classes.about}`}>
       <Container>
         <Row>
           <Col lg="6" className={`${classes.about__content} `}>
@@ -64,17 +65,19 @@ const About = () => {
             </div>
           </Col>
           <Col lg="6">
-            <div
-              className={`${classes.about__img__gallery} d-flex gap-4 justify-content-end`}
+            <RevealList
+              interval={70}
+              delay={500}
+              origin="right"
+              reset="true"
+              className={`${classes.about__skills} d-flex gap-4 flex-wrap justify-content-center`}
             >
-              <div className="d-flex mb-3">
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img01} alt="about-img" />
+              {skillsData.map((skill, index) => (
+                <div key={index}>
+                  <Skill skill={skill} />
                 </div>
-              </div>
-            </div>
+              ))}
+            </RevealList>
           </Col>
         </Row>
       </Container>

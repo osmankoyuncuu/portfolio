@@ -4,6 +4,7 @@ import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 import portfolioData from "../../data/portfolio";
 import { useState, useEffect } from "react";
+import { RevealList, RevealWrapper } from "next-reveal";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("Frontend");
@@ -37,7 +38,7 @@ const Portfolio = () => {
   const passive = `${classes.tab__btn__passive}`;
 
   return (
-    <section id="portfolio">
+    <section id="portfolio" className={`${classes.portfolio}`}>
       <Container>
         <Row>
           <Col md="6" className="mb-3">

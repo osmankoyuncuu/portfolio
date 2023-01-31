@@ -1,5 +1,7 @@
 .hero {
+  margin-top: 1rem;
   padding-top: 60px;
+  padding-bottom: 2.7rem;
 }
 .hero__content {
   margin-top: 40px;
@@ -21,9 +23,23 @@
   .hero__content h5 {
     font-size: 1.1rem !important;
   }
+  .hero__img img {
+    width: 340px !important;
+  }
 }
 @media screen and (max-width: 768px) {
+  .hero {
+    margin-top: 0rem;
+    padding-top: 0px;
+    padding-bottom: 1rem;
+  }
   .hero__img {
     text-align: center !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .hero__img img {
+    width: 240px !important;
+    height: 300px;
   }
 }

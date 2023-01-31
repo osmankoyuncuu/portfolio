@@ -12,12 +12,14 @@
 .testimonial__client h6:last-child {
   color: var(--primary);
 }
+@media screen and (max-width: 992px) {
+  .testimonial__img img {
+    width: 330px !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .testimonial__img {
     text-align: center;
-  }
-  .testimonial__img img {
-    width: 200px !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -26,6 +28,6 @@
     margin-bottom: 30px;
   }
   .testimonial__img img {
-    width: 150px !important;
+    width: 250px !important;
   }
 }

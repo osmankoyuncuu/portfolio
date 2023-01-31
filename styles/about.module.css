@@ -1,24 +1,22 @@
+.about {
+  padding-top: 11rem;
+}
 .about__icon i {
   color: var(--primary);
 }
-.about__img {
-  padding: 10px;
-  background: var(--bg-secondary);
-  border-radius: 5px;
-}
-.about__img img {
-  width: 100% !important;
-  height: 100%;
-  border-radius: 5px;
-}
-.about__img__box {
-  width: 500px !important;
-  height: 100%;
+.about__skills {
+  padding: 5rem 2rem 0 2rem;
 }
 .about__img__gallery {
   margin-top: 50px;
 }
 @media screen and (max-width: 992px) {
+  .about {
+    padding-top: 4rem;
+  }
+  .about__skills {
+    padding: 2rem 2rem 0 2rem;
+  }
   .about__img__gallery {
     justify-content: center !important;
   }

@@ -4,6 +4,7 @@ import SectionSubtitle from "./SectionSubtitle";
 import network from "../../public/images/Testimonials.png";
 import Slider from "react-slick";
 import classes from "../../styles/testimonial.module.css";
+import { RevealWrapper } from "next-reveal";
 
 const Testimonial = () => {
   const settings = {
@@ -21,9 +22,11 @@ const Testimonial = () => {
       <Container>
         <Row>
           <Col md="6" className={`${classes.testimonial__img}`}>
-            <Image alt="network-img" src={network} width="400" height="400" />
+            <RevealWrapper origin="left" delay={500} reset="true">
+              <Image alt="network-img" src={network} width="400" height="400" />
+            </RevealWrapper>
           </Col>
-          <Col md="6">
+          <Col md="6 px-5">
             <SectionSubtitle subtitle="Testimonials" />
             <h4 className="mt-4 mb-5">What my client says</h4>
 

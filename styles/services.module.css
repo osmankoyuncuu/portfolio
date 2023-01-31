@@ -1,9 +1,15 @@
+.services {
+  padding-top: 12rem;
+}
 .services__container {
   display: flex;
   align-items: center;
   column-gap: 2rem;
 }
 @media screen and (max-width: 992px) {
+  .services {
+    padding-top: 3rem;
+  }
   .services__container {
     flex-direction: column;
     align-items: unset;
