@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="google-site-verification"
-          content="LLJiIX_X0gbF1leZqlLiyA8hX5eiVFAryTXXDNRuRsc"
+          content="uc9qbOc12UAuTGr_LgS3aKZBHIUOq9AEpXeTQPTWfl4"
         />
       </Head>
       <main>
