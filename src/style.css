@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #176b87;
+  --secondary-color: #64ccc5;
+  --dark-color: #032533;
+  --light-color: #eeeeee;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.anton {
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+}
+
+p,
+a,
+span,
+ul,
+li,
+input,
+button {
+  font-size: clamp(0.9rem, 1vw + 0.125rem, 1.125rem);
+}
+h1 {
+  font-size: clamp(1.5rem, 1vw + 0.75rem, 2.5rem);
+}
+h2 {
+  font-size: clamp(1.25rem, 1vw + 0.5rem, 1.875rem);
+}
+h3 {
+  font-size: clamp(1.125rem, 1vw + 0.125rem, 1.5rem);
+}
+h4 {
+  font-size: clamp(1rem, 1vw + 0.125rem, 1.25rem);
+}
